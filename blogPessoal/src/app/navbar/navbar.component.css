@@ -1,0 +1,13 @@
+.texto {
+    letter-spacing: .2rem;
+    font-size:16pt;
+}
+
+.roxo {
+    background-color: rgb(247, 82, 110);
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+.text-bar {
+    font-family: 'Indie Flower', cursive;
+}

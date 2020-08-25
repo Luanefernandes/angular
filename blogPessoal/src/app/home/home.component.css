@@ -1,3 +1,17 @@
-p {
-    font-size: 250px;
+.parallax {
+    background-image: url('https://eskipaper.com/images/creativity-wallpaper-3.jpg');
+    min-height: 500px;
+    background-attachment: fixed;
+    background-position: no-repeat;
+    background-size: cover;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Cardo&family=Montserrat:ital,wght@1,300&display=swap');
+.text-um {
+    font-family: 'Montserrat', sans-serif;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Chilanka&display=swap');
+.text-titulo {
+    font-family: 'Chilanka', cursive;
 }
