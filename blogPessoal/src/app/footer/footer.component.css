@@ -26,3 +26,7 @@ ul.social-network {
   .faInstagram:hover{
   color: #C13584;
   }
+
+  .footer {
+    background-color: rgb(214, 73, 97);
+  }
