@@ -1,6 +1,6 @@
 .parallax {
     background-image: url('https://eskipaper.com/images/creativity-wallpaper-3.jpg');
-    min-height: 500px;
+    min-height: 200px;
     background-attachment: fixed;
     background-position: no-repeat;
     background-size: cover;
@@ -14,4 +14,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Chilanka&display=swap');
 .text-titulo {
     font-family: 'Chilanka', cursive;
+}
+
+.transp {
+    background-color: rgba(255, 255, 255, 0.788);
+    min-height: 300px;
 }

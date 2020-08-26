@@ -11,3 +11,7 @@
 .text-bar {
     font-family: 'Indie Flower', cursive;
 }
+
+.transp {
+    background-color: rgba(255,255,255,0);
+}
