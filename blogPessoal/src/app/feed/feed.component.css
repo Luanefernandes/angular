@@ -1,0 +1,12 @@
+.parallaxfeed {
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.74) 0%, rgb(14, 14, 14) 100%), url("https://s2.best-wallpaper.net/wallpaper/3840x2160/1801/Fashion-art-photography-black-skin-girl_3840x2160.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: cover;
+    min-height: 800px;
+}
+
+.transp {
+    margin-top:100px;
+}

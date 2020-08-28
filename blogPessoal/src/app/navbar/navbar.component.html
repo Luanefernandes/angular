@@ -7,25 +7,34 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav mr-auto">
             <li class="nav-item">
-              <a class="nav-link texto text-bar font-weight-bold p-2" routerLink="/home">home <span class="sr-only">(current)</span></a>
+              <a class="ml-5 nav-link texto text-monocrome font-weight-bold p-2" routerLink="/home">home <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
-              <a class="ml-5 nav-link texto text-bar font-weight-bold p-2" routerLink="/feed">feed</a>
+              <a class="ml-5 nav-link texto text-monocrome font-weight-bold p-2" routerLink="/feed">feed</a>
             </li>
-            <li class="nav-item">
-              <a class="ml-5 nav-link texto text-bar font-weight-bold p-2" routerLink="/projetos">projetos</a>
-            </li>
-            <li class="nav-item">
-              <a class="ml-5 nav-link texto text-bar font-weight-bold p-2" routerLink="/quem_sou">quem sou</a>
-            </li>
+            <div *ngIf='auth.btnLogin()'>
+              <li class="nav-item">
+                <a class="ml-5 nav-link texto text-monocrome font-weight-bold p-2" routerLink="/login">Login</a>
+              </li>
+            </div>
+
+            <div *ngIf='auth.btnLogin()'>
+              <li class="nav-item">
+                <a class="ml-5 nav-link texto text-monocrome font-weight-bold p-2" routerLink="/cadastro">Cadastro</a>
+              </li>
+            </div>
+
+            <div *ngIf='auth.btnSair()'>
+              <li class="nav-item">
+                <a class="ml-5 nav-link texto text-monocrome font-weight-bold p-2" (click)="sair()">Sair</a>
+              </li>
+            </div>
           </ul>
         </div>
       </nav>
 </div>
 
-<!-- Just an image -->
-<nav class="navbar navbar-toggler p-1 roxo">
-</nav>
+
 
 
 
