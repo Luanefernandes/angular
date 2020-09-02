@@ -12,11 +12,11 @@
                 <div class="form-group">
                     <label class="text-monospace text-light" for="titulo">Título</label>
                     <input type="text" class="form-control" id="título" aria-describedby="emailHelp"
-                        placeholder="Digite aqui seu título">
+                        placeholder="Digite aqui seu título" [(ngModel)]='postagem.titulo'>
                 </div>
                 <div class="form-group">
                     <label class="text-monospace text-light" for="texto">Texto</label>
-                    <textarea class="form-control" id="texto" row="3" placeholder="Digite aqui seu texto"></textarea>
+                    <textarea class="form-control" id="texto" row="3" placeholder="Digite aqui seu texto"[(ngModel)]='postagem.texto'></textarea>
                 </div>
 
                 <div class="row d-flex align-items-end">
@@ -33,7 +33,7 @@
                         </div>
                     </div>
                     <div class="col-md-6 d-flex justify-content-end">
-                        <button type="button" class="btn btn-outline-light w-25">Publicar</button>
+                        <button type="button" class="btn btn-outline-light w-25"(click)='publicar()'>Publicar</button>
                     </div>
                 </div>
                 <hr class="mt-5 mb-5">
@@ -66,11 +66,11 @@
 
                         <div class="row">
                             <div class="col-md-12">
-                                <div class="card mt-5" *ngFor='let item of listaPostagens'>
+                                <div class="card mt-5" *ngFor = 'let item of listaPostagens | orderBy: key : reverse' >
                                     <div class="card-header">
                                         <div class="row d-flex align-items-center">
                                             <div class="col-md-8">
-                                                <h5 class="card-title"> {{item.titulo}}</h5>
+                                                <h5 class="card-title">{{item.titulo}} </h5>
                                                 <small>Tema: {{item.tema.descricao}} </small>
                                             </div>
                                             <div class="col-md-4 d-flex justify-content-end">
